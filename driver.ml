@@ -3,6 +3,6 @@ open Utils
 open Format
 
 let () =
-  let key = Io.slurp_file "input.txt" in
-  let number = Day4.first_md5 key "000000" 0 in
-  printf "%d\n" number
+  Io.lines "input.txt" |> List.map Day5.is_nice
+  |> List.map (fun b -> if b then 1 else 0)
+  |> List.fold_left ( + ) 0 |> printf "%d\n"
