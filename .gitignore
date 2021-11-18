@@ -1,5 +1,8 @@
-# Build files
-_build
+# Object files
+*.o
+
+# Executables
+aoc
 
 # IDE Stuff
 .vscode

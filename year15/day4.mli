@@ -1,1 +1,0 @@
-val first_md5 : string -> string -> int -> int
