@@ -42,3 +42,35 @@ split(string const& input, string delimiter)
   tokens.push_back(input_copy);
   return tokens;
 }
+
+string
+take_until_digit(string& input)
+{
+  int index = 0;
+  for (char& ch : input) {
+    if (ch >= '0' && ch <= '9') {
+      break;
+    } else {
+      ++index;
+    }
+  }
+
+  string result = input.substr(0, index);
+  input.erase(0, index);
+
+  return result;
+}
+
+string
+take_until_sep(string& input, string const& separator)
+{
+  int index = 0;
+  if ((index = input.find(separator)) != string::npos) {
+    string result = input.substr(0, index);
+    input.erase(0, index);
+
+    return result;
+  }
+
+  return input;
+}

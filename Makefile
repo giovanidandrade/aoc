@@ -1,4 +1,4 @@
-SRCS    := utils/util.cpp year$(year)/day$(day).cpp
+SRCS    := utils/utils.cpp year$(year)/day$(day).cpp
 OBJS    := $(patsubst %.cpp,%.o,$(SRCS))
 DEPS    := $(wildcard include/*.h)
 

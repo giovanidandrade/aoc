@@ -9,3 +9,6 @@ aoc
 
 # Input files
 *.txt
+
+# Debug logs
+*.log

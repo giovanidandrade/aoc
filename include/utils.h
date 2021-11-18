@@ -16,4 +16,18 @@ read_lines(std::string filename);
 std::vector<std::string>
 split(std::string const& input, std::string delimiter);
 
+/* Collects a prefix until sees a number.
+ * Returns the prefix immediately before seeing the number.
+ * Modifies the string
+ */
+std::string
+take_until_digit(std::string& input);
+
+/* Collects a prefix until sees a separator
+ * Returns the prefix immediately before seeing the separator.
+ * Modifies the string
+ */
+std::string
+take_until_sep(std::string& input, std::string const& separator);
+
 #endif
