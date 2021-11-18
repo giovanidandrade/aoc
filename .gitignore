@@ -1,0 +1,8 @@
+# Build files
+_build
+
+# IDE Stuff
+.vscode
+
+# Input files
+*.txt
