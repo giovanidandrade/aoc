@@ -3,7 +3,7 @@ OBJS    := $(patsubst %.cpp,%.o,$(SRCS))
 DEPS    := $(wildcard include/*.h)
 
 CXX     := clang-12
-CFLAGS  := -Iinclude -Wall -std=c++11
+CFLAGS  := -Iinclude -Wall -std=c++11 -g
 
 LIBS    := -lstdc++
 
