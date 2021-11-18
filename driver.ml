@@ -3,5 +3,4 @@ open Utils
 open Format
 
 let () =
-  Io.lines "input.txt" |> List.map Day2.ribbon_feet |> List.fold_left ( + ) 0
-  |> printf "%d\n"
+  Io.slurp_file "input.txt" |> Day3.threaded_count_houses |> printf "%d\n"
