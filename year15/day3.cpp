@@ -39,7 +39,7 @@ update_position(char ch, int* x, int* y)
 }
 
 int
-count_houses(std::string directions)
+count_houses(std::string const& directions)
 {
   int number_houses = 1;
 
@@ -48,7 +48,7 @@ count_houses(std::string directions)
 
   memory.insert(pack_position(x, y));
 
-  for (char& ch : directions) {
+  for (char const& ch : directions) {
     update_position(ch, &x, &y);
 
     int position = pack_position(x, y);
@@ -63,7 +63,7 @@ count_houses(std::string directions)
 }
 
 int
-count_houses_with_robo(std::string directions)
+count_houses_with_robo(std::string const& directions)
 {
   int number_houses = 1;
 
@@ -77,7 +77,7 @@ count_houses_with_robo(std::string directions)
   memory.insert(pack_position(*x, *y));
 
   bool is_santa = true;
-  for (char& ch : directions) {
+  for (char const& ch : directions) {
     update_position(ch, x, y);
 
     int position = pack_position(*x, *y);

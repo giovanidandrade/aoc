@@ -33,7 +33,7 @@ struct Box
 
 /* Parses a box from a string where its dimensions are given separated by 'x' */
 Box
-parse_box(std::string line)
+parse_box(std::string const& line)
 {
   Box box;
 

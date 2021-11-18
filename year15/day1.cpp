@@ -15,11 +15,11 @@ from_paren(char ch)
 }
 
 int
-get_floor(std::string input)
+get_floor(std::string const& input)
 {
   int floor = 0;
 
-  for (char& ch : input) {
+  for (char const& ch : input) {
     floor += from_paren(ch);
   }
 
@@ -27,7 +27,7 @@ get_floor(std::string input)
 }
 
 int
-first_to_basement(std::string input)
+first_to_basement(std::string const& input)
 {
   int floor = 0;
 
