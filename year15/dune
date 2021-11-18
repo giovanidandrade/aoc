@@ -1,2 +1,3 @@
 (library
- (name year15))
+ (name year15)
+ (libraries str))

@@ -2,4 +2,6 @@ open Year15
 open Utils
 open Format
 
-let () = Io.slurp_file "input.txt" |> Day1.basement_position |> printf "%d\n"
+let () =
+  Io.lines "input.txt" |> List.map Day2.ribbon_feet |> List.fold_left ( + ) 0
+  |> printf "%d\n"
