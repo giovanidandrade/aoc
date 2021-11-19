@@ -4,4 +4,4 @@ aoc:
 .PHONY: clean
 
 clean:
-	rm -f 20*/day*.out
+	rm -f 20*/day*.out *.log
