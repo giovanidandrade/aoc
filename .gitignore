@@ -1,9 +1,6 @@
 # Object files
 *.o
 
-# Executables
-aoc
-
 # IDE Stuff
 .vscode
 
