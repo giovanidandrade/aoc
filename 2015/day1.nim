@@ -1,4 +1,4 @@
-proc count_floor(directions: string): int =
+proc countFloor(directions: string): int =
     var floor = 0
 
     for _, ch in directions[0 .. ^1]:
@@ -9,7 +9,7 @@ proc count_floor(directions: string): int =
     
     return floor
 
-proc first_to_basement(directions: string): int =
+proc firstToBasement(directions: string): int =
     var floor = 0
 
     for index, ch in directions[0 .. ^1]:
@@ -26,5 +26,5 @@ proc first_to_basement(directions: string): int =
 
 let input = readFile("input.txt")
 
-echo "Part 1: ", count_floor(input)
-echo "Part 2: ", first_to_basement(input)
+echo "Part 1: ", countFloor(input)
+echo "Part 2: ", firstToBasement(input)
