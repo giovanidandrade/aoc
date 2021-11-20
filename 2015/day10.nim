@@ -1,4 +1,3 @@
-from std/strutils import split, parseInt
 from std/sequtils import mapIt, toSeq
 
 proc rle(inp: seq[int]): seq[int] =
