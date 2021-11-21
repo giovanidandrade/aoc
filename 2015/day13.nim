@@ -48,7 +48,6 @@ proc findHappiestArrangement(happinessMatrix: Graph, permutations: seq[seq[int]]
 
 let input = readFile("input.txt").split('\n')
 
-
 var happinessMatrix = makeGraph(input, parser)
 var numberNodes = happinessMatrix.len
 var arrangements = allPermutations(@[], toSeq(0..<numberNodes))
