@@ -61,7 +61,7 @@ proc findAllRecipes(len: int, sum: int): seq[seq[int]] =
     
     return result
 
-var input = readFile("input.txt").split('\n').map(makeIngredient)
+let input = readFile("input.txt").split('\n').map(makeIngredient)
 
 let recipes = findAllRecipes(input.len, 100)
 let scores = recipes
