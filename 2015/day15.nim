@@ -48,7 +48,6 @@ proc bakeAndEval(coeffs: seq[int], ingredients: seq[Ingredient]): array[2, int] 
     
     return [capacity * durability * flavor * texture, calories]
 
-## Takes a few teaspoons from one ingredient to give to another
 proc findAllRecipes(len: int, sum: int): seq[seq[int]] =
     if len == 1:
         return @[@[sum]]
