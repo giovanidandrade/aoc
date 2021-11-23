@@ -7,8 +7,11 @@ fast:
 danger:
 	nim c -d:danger -o:20$(year)/day$(day).out -r 20$(year)/day$(day).nim
 
-new:
+new: 20$(year)
 	touch 20$(year)/day$(day).nim
+
+20$(year):
+	mkdir $@
 
 .PHONY: clean
 
