@@ -21,10 +21,6 @@ proc isStraight(line: Line): bool =
     return line[0] == line[2] or
            line[1] == line[3]
 
-proc printGrid(grid: Grid) =
-    for row in grid:
-        echo row.mapIt(if it == 0: "." else: $it).join("")
-
 proc getPoints(grid: Grid): int =
     for row in grid:
         result += row
